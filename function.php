@@ -5,6 +5,10 @@ Dump — выдача информации о состоянии системы 
 require_once($_SERVER['DOCUMENT_ROOT']."/var_dumper.php");
 */
 function dump($data) {
+    global $CORE;
+    if(!$CORE['DEV_MODE']) {
+        return;
+    }
     echo "<pre style=\"margin: 10px 0; padding: 10px; background: #ececec; white-space: pre-wrap;\">";
     print_r($data);
     echo "</pre>";

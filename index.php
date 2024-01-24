@@ -180,8 +180,6 @@ $arProducts = [
 // test_2
 // test_3
 
-
-
 ?>
 
 <a href="/create.php">Создать новый автомобиль</a>
